@@ -5,11 +5,9 @@ def load_library(file_path)
  emoticons = YAML.load_file(file_path)
  new_hash = {}
  
- emoticons.each do |emo|
-   emo.map do |inner|
-     inner.unshift("english") 
-     inner.insert(2, "japanese")
-     new_hash = Hash[*inner.flatten]
+ emoticons.each do |key, value|
+   value.each do |inner_ele|
+     
    end 
  end 
  new_hash
