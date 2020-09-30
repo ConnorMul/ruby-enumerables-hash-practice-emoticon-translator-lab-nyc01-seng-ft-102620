@@ -9,7 +9,10 @@ def load_library(file_path)
    emo.map do |inner|
      inner.unshift("english") 
      inner.insert(2, "japanese")
-     new_hash = Hash[]
+     new_hash = Hash[*inner.flatten]
+   end 
+ end 
+ new_hash
 end
 
 def get_japanese_emoticon
