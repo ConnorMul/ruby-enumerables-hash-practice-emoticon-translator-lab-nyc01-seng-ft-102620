@@ -7,7 +7,7 @@ def load_library(file_path)
  
  emoticons.each do |emo|
    emo.map do |inner|
-     inner.unshift(:english) 
+     inner.unshift("english") 
      inner.slice()
 end
 
