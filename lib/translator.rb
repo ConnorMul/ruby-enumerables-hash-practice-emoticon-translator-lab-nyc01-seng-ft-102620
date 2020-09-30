@@ -8,7 +8,8 @@ def load_library(file_path)
  emoticons.each do |emo|
    emo.map do |inner|
      inner.unshift("english") 
-     inner.slice()
+     inner.insert(2, "japanese")
+     inner.flatten
 end
 
 def get_japanese_emoticon
