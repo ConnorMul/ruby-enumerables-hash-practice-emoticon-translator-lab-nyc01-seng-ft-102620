@@ -15,9 +15,10 @@ end
 
 def get_japanese_emoticon(file_path, emotion)
   library = load_library(file_path)
-  emotion = library.keys.find do |emo|
-    library[key][:english] = emo
+  emoticon = library.keys.find do |emo|
+    library[key][:english] == emoticon
   end 
+  
 end
 
 def get_english_meaning(file_path, emoticon)
