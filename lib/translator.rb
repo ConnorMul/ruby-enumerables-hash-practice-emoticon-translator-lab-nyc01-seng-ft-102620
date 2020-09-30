@@ -6,7 +6,9 @@ def load_library(file_path)
  new_hash = {}
  
  emoticons.each do |emo|
-   emo.unshift()
+   emo.map do |inner|
+     inner.unshift(:english) 
+     inner.slice()
 end
 
 def get_japanese_emoticon
